@@ -3,7 +3,7 @@
  * Plugin Name: Form data to kintone Subtable.
  * Plugin URI:
  * Description: This plugin is an addon for "kintone form".
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Takashi Hosoya
  * Author URI:  http://ht79.info/
  * License: GPLv2
