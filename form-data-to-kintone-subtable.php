@@ -70,7 +70,6 @@ class KintoneFormSubtable {
 
 		$subtable_values = array();
 
-
 		foreach ( $kintone_form_properties_data['fields'] as $kintone_form_subtable_properties_data ) {
 			// 通常処理データを貰う
 			$subtable_values[] = $this->generate_format_kintone_data( $kintone_setting_data, $appdata, $kintone_fields_and_cf7_mailtag_relate_data, $kintone_form_subtable_properties_data, $cf7_send_data, $e );
@@ -90,7 +89,6 @@ class KintoneFormSubtable {
 		}
 
 		return $subtable_records;
-
 
 	}
 
@@ -120,7 +118,7 @@ class KintoneFormSubtable {
 						// $hoge['fieldcode'][0]['value']['値']
 						// $hoge['fieldcode'][1]['value']['値']
 						// $hoge['fieldcode'][2]['value']['値']
-						$formated_kintone_value[ $kintone_form_field_properties['code'] ][] = KintoneForm::get_formated_data_for_kintone( $kintone_setting_data, $appdata, $kintone_form_field_properties, $cf7_send_data, $related_cf7_mail_tag . '__' . $count, $e );
+						$formated_kintone_value[ $kintone_form_field_properties['code'] ][] = Kintone_Form_Post_Kintone::get_formated_data_for_kintone( $kintone_setting_data, $appdata, $kintone_form_field_properties, $cf7_send_data, $related_cf7_mail_tag . '__' . $count, $e );
 						$count ++;
 					}
 
